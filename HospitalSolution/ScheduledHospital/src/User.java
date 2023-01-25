@@ -1,4 +1,4 @@
-public class User {
+public abstract class User {
     public static int id;
     private String name;
     private String email;
@@ -51,5 +51,9 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    
+    public abstract void saludar();
+
+    public void recetarMedicina(){
+        System.out.println("Tomaté la medicina");
+    }
 }

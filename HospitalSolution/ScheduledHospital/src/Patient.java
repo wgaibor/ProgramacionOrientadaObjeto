@@ -1,4 +1,4 @@
-public class Patient extends User{
+public class Patient extends User implements IServicioHospitlario, IServicioOfrecido{
 
     private String birthday;
     private double weight;
@@ -44,7 +44,30 @@ public class Patient extends User{
     public void setBlood(String blood) {
         this.blood = blood;
     }
-    
 
+    @Override
+    public void saludar() {
+        System.out.println("Hola soy el paciente  "+super.getName());
+    }
+
+    @Override
+    public void tomarSignosVitales() {
+        
+    }
+
+    @Override
+    public void tomarMuestraDeExamen() {
+        
+    }
+
+    @Override
+    public void ofrecerUniforme() {
+        
+    }
+
+    @Override
+    public void darAlimentacion() {
+        System.out.println("Tenga su sanduchito  ");
+    }
     
 }
