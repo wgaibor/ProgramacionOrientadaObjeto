@@ -14,13 +14,12 @@ public class App {
         patientKaren.tomarSignosVitales();
         patientKaren.darAlimentacion();
 
-        User objetoUsuario = new User("Walther") {
+        User usuarioKevin = new User("Kevin") {
             @Override
             public void saludar() {
-               System.out.println("Hola señor");
+                System.out.println("Hola caballero   "+super.getName());
             }
         };
-        objetoUsuario.saludar();
-        //User objetoUsuario2 = new Doctor("Walther", "Veterinario");
+        usuarioKevin.saludar();
     }
 }
