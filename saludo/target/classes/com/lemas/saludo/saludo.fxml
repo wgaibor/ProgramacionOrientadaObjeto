@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lemas.saludo.Saludo">
    <children>
       <Label layoutX="65.0" layoutY="91.0" prefHeight="35.0" prefWidth="184.0" text="Ingrese su nombre">
@@ -15,7 +14,9 @@
          </font>
       </Label>
       <TextField fx:id="txtNombre" layoutX="260.0" layoutY="96.0" />
-      <Button fx:id="btnSaludar" layoutX="223.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickEnElBoton" text="Saludar" />
+      <Button fx:id="btnSaludar" layoutX="84.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickEnElBoton" text="Saludar" />
       <Label fx:id="txtSaludo" layoutX="226.0" layoutY="281.0" text="XXXXXXX" />
+      <Button fx:id="btnNuevaActividad" layoutX="200.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickSiguiente" text="Ir a la primera actividad" />
+      <Button fx:id="btnLimpiar" layoutX="409.0" layoutY="192.0" mnemonicParsing="false" onAction="#limpiarTexto" text="Limpiar" />
    </children>
 </Pane>
